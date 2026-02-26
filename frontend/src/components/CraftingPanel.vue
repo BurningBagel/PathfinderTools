@@ -1,4 +1,0 @@
-<template>
-    <CraftingHeader/>
-    <CraftingSurface/>
-</template>
