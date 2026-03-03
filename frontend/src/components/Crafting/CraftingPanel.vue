@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 import CraftingHeader from './CraftingHeader.vue';
 import CraftingSurface from './Surface/CraftingSurface.vue';
 

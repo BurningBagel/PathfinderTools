@@ -7,7 +7,6 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 
 <template>
     <div class="bg">
-        <img src="..\..\..\assets\flat-lay-rusty-metallic-surface.jpg" alt="">
         <div class="fg">
             <CraftingCharacterSection />
             <CraftingItemSection />
@@ -15,18 +14,28 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
         </div>
 
     </div>
-    <a href="https://www.freepik.com/free-photo/flat-lay-rusty-metallic-surface_11684393.htm">Image by freepik</a>
+    <footer><a href="https://www.freepik.com/free-photo/flat-lay-rusty-metallic-surface_11684393.htm">Image by freepik</a></footer>
 </template>
 
 <style lang="css" scoped>
 .bg {
-    fill: #B7410E;
-    fill-opacity: 86%;
+    position: relative;
+    background: 
+    url('@/assets/flat-lay-rusty-metallic-surface.jpg'),
+    linear-gradient(#B7410E,#B7410E);
+
+    background-size: cover;
+    background-position: center;
+
+    background-blend-mode: multiply;
     border-radius: 5px;
-    stroke: #9C370B;
-    stroke-width: 10;
     box-shadow: 4px 4px 4px #000000,
                  2px 2px 7px #9C370B inset;
+
+    /* fill: #B7410E; */
+    /* fill-opacity: 86%; */
+    stroke: #9C370B;
+    stroke-width: 10;
 }
 /* <a href="https://www.freepik.com/free-photo/flat-lay-rusty-metallic-surface_11684393.htm">Image by freepik</a> */
 .fg {
