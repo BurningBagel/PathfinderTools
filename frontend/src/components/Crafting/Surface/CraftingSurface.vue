@@ -8,26 +8,45 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 <template>
     <div class="bg">
         <div class="fg">
-            <CraftingCharacterSection />
-            <CraftingItemSection />
-            <CraftingFeatSection />
+            <div class="panel">
+                <CraftingCharacterSection />
+                <CraftingItemSection />
+                <CraftingFeatSection />
+            </div>
+    
         </div>
-
+        <footer><a href="https://www.freepik.com/free-photo/flat-lay-rusty-metallic-surface_11684393.htm">Image by freepik</a></footer>
     </div>
-    <footer><a href="https://www.freepik.com/free-photo/flat-lay-rusty-metallic-surface_11684393.htm">Image by freepik</a></footer>
 </template>
 
 <style lang="css" scoped>
 .bg {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F0E7D8;
+}
+
+
+
+.fg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 70%;
+    width: 50%;
     background: 
-    url('@/assets/flat-lay-rusty-metallic-surface.jpg'),
-    linear-gradient(#B7410E,#B7410E);
+    linear-gradient(rgba(183,65,14,0.86),rgba(183,65,14,0.86)),
+    url('/src/assets/flat-lay-rusty-metallic-surface.jpg');
 
     background-size: cover;
     background-position: center;
 
     background-blend-mode: multiply;
+    border-width: 5px;
     border-radius: 5px;
     box-shadow: 4px 4px 4px #000000,
                  2px 2px 7px #9C370B inset;
@@ -38,21 +57,12 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
     stroke-width: 10;
 }
 /* <a href="https://www.freepik.com/free-photo/flat-lay-rusty-metallic-surface_11684393.htm">Image by freepik</a> */
-.fg {
+.panel {
     position: absolute;
     x: 10;
     y: 12;
+    stroke: red;
 }
 
-img {
-    position: absolute;
-    x: 0;
-    y: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(0,0,0,0.6);
-}
 
 </style>

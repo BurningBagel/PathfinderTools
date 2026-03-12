@@ -18,6 +18,7 @@
   background: #1f6f63;
   color: #f4b04f;
   font-family: "Inter" sans-serif;
+  text-shadow: 0px 4px 4px black;
   padding: 10px 16px;
   border-radius: 6px;
   outline: solid 9px #565656;
