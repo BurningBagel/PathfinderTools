@@ -37,6 +37,24 @@
   0 2px 4px rgba(0,0,0,0.4);
 }
 
+.crafting-button:before,
+.crafting-button:after {
+  content: attr(title);
+  padding: 50px;
+  color: rgba(255, 255, 255, .1);
+  position: absolute;
+}
+
+.crafting-button:before {
+  top: 1px;
+  left: 1px
+}
+
+.crafting-button:after {
+  top: 2px;
+  left: 2px
+}
+
 </style>
 
 <script setup lang="ts">
