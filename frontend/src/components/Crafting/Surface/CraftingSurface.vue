@@ -7,11 +7,13 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 
 <template>
     <div class="bg">
-        <div class="fg">
+        <div class="panel_bg">
             <div class="panel">
-                <CraftingCharacterSection />
-                <CraftingItemSection />
-                <CraftingFeatSection />
+                <div class="panel_fg">
+                    <CraftingCharacterSection />
+                    <CraftingItemSection />
+                    <CraftingFeatSection />
+                </div>
             </div>
     
         </div>
@@ -19,7 +21,7 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
     </div>
 </template>
 
-<style lang="css" scoped>
+<style lang="css">
 .bg {
     display: flex;
     justify-content: center;
@@ -31,34 +33,42 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 
 
 
-.fg {
+.panel_bg {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     height: 70%;
     width: 50%;
+    /* background: #B7410E; */
     background: 
-    linear-gradient(rgba(183,65,14,0.86),rgba(183,65,14,0.86)),
-    url('/src/assets/flat-lay-rusty-metallic-surface.jpg');
-
+        url('/src/assets/flat-lay-rusty-metallic-surface.jpg'),
+        linear-gradient(rgba(183,65,14,0.86),rgba(183,65,14,0.86));
     background-size: cover;
     background-position: center;
+    background-blend-mode: overlay;
 
-    background-blend-mode: multiply;
-    border-width: 5px;
-    border-radius: 5px;
+    
     box-shadow: 4px 4px 4px #000000,
-                 2px 2px 7px #9C370B inset;
-
+    2px 2px 7px #9C370B inset;
+    
     /* fill: #B7410E; */
     /* fill-opacity: 86%; */
-    stroke: #9C370B;
-    stroke-width: 10;
+    border: 10px solid #9C370B;
+    border-radius: 5px;
 }
 /* <a href="https://www.freepik.com/free-photo/flat-lay-rusty-metallic-surface_11684393.htm">Image by freepik</a> */
 .panel {
+    
     position: absolute;
+    
+    height: 95%;
+    width: 95%;
+
+    border: #000000 1px solid;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #000000 inset;
+
     x: 10;
     y: 12;
     stroke: red;

@@ -11,17 +11,18 @@
     </button>
 </template>
 
-<style lang="css" scoped>
+<style lang="css" >
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif&display=swap');
 
 .crafting-button{
-  background: #1f6f63;
+  background-color: rgba(0,181,209,0.68);
+  
   color: #f4b04f;
   font-family: "Inter" sans-serif;
   text-shadow: 0px 4px 4px black;
   padding: 10px 16px;
   border-radius: 6px;
-  outline: solid 9px #565656;
+  border: solid 9px #565656;
   box-shadow: 
   0 4px 0 #13443d,
   0 6px 8px rgba(0,0,0,0.4);
