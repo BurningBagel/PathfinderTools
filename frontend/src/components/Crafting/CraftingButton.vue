@@ -17,8 +17,9 @@
 .crafting-button{
   background-color: rgba(0,181,209,0.68);
   
-  color: #f4b04f;
+  color: #D59C4B;
   font-family: "Inter" sans-serif;
+  font-size: 36;
   text-shadow: 0px 4px 4px black;
   padding: 10px 16px;
   border-radius: 6px;
