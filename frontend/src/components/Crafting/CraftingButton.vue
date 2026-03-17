@@ -21,7 +21,7 @@
   font-family: "Inter" sans-serif;
   font-size: 36;
   text-shadow: 0px 4px 4px black;
-  padding: 10px 16px;
+  padding: 5px 10px;
   border-radius: 6px;
   border: solid 9px #565656;
   box-shadow: 

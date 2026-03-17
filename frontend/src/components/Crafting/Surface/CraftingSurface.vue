@@ -10,9 +10,11 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
         <div class="panel_bg">
             <div class="panel">
                 <div class="panel_fg">
-                    <CraftingCharacterSection />
-                    <CraftingItemSection />
-                    <CraftingFeatSection />
+                    <div class="section">
+                        <CraftingItemSection />
+                    </div>
+                    <CraftingCharacterSection class="section"/>
+                    <CraftingFeatSection class="section"/>
                 </div>
             </div>
     
@@ -22,6 +24,13 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 </template>
 
 <style lang="css">
+.section{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 3;
+}
+
+
 .bg {
     display: flex;
     justify-content: center;
@@ -30,7 +39,6 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
     height: 100vh;
     background-color: #F0E7D8;
 }
-
 
 
 .panel_bg {
@@ -72,6 +80,11 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
     x: 10;
     y: 12;
     stroke: red;
+}
+
+.panel_fg{
+    display: flex;
+    flex-direction: column;
 }
 
 
