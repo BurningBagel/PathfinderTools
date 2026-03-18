@@ -4,9 +4,9 @@ import CraftingButton from '../../CraftingButton.vue';
 </script>
 
 <template>
-    <CraftingButton :label="'proficiency'" class="button" style="top: 75px;"/>
-    <CraftingButton :label="'char level'" class="button" style="left: 100px"/>
-    <CraftingButton :label="'circum. bonuses'" class="button" style="left: 200px"/>
+    <CraftingButton :label="'proficiency'" class="button" />
+    <CraftingButton :label="'char level'" class="button" />
+    <CraftingButton :label="'circum. bonuses'" class="button" />
 </template>
 
 <style lang="css" scoped>

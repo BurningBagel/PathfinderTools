@@ -10,11 +10,16 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
         <div class="panel_bg">
             <div class="panel">
                 <div class="panel_fg">
-                    <div class="section">
+                    <div class="flex gap-4 justify-between mx-15 my-15 grow-0 shrink-0 border-4" >
                         <CraftingItemSection />
                     </div>
-                    <CraftingCharacterSection class="section"/>
-                    <CraftingFeatSection class="section"/>
+                    <div class="flex gap-4 justify-between mx-15 my-15 border-4">
+                        <CraftingCharacterSection class="section"/>
+                    </div>
+                    <div>
+                        <CraftingFeatSection class="section"/>
+                        
+                    </div>
                 </div>
             </div>
     
@@ -32,11 +37,14 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 
 
 .bg {
+    margin: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
+    margin: 0;
+    padding: 0;
     background-color: #F0E7D8;
 }
 
