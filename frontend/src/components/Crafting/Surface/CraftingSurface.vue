@@ -1,24 +1,33 @@
 <script setup lang="ts">
+import StartCraftButton from '../StartCraftButton.vue';
 import CraftingCharacterSection from './CharacterSection/CraftingCharacterSection.vue';
 import CraftingFeatSection from './FeatSection/CraftingFeatSection.vue';
 import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 
+//TODO: BOLTS
+
+//TODO: FEATS LIST
+
+//TODO: CRAFT BUTTON
+
+//TODO: RUST EFFECT ON BUTTONS AND BOLTS
+
 </script>
 
 <template>
-    <div class="bg">
+    <div class="bg flex flex-col">
         <div class="panel_bg">
-            <div class="panel">
+            <div class="panel my-4">
                 <div class="panel_fg">
-                    <div class="flex gap-4 justify-between mx-15 my-15 grow-0 shrink-0 border-4" >
+                    <div class="flex gap-4 justify-between mx-15 my-15" >
                         <CraftingItemSection />
                     </div>
-                    <div class="flex gap-4 justify-between mx-15 my-15 border-4">
-                        <CraftingCharacterSection class="section"/>
+                    <div class="flex gap-4 justify-between mx-15 my-15">
+                        <CraftingCharacterSection />
                     </div>
-                    <div>
-                        <CraftingFeatSection class="section"/>
-                        
+                    <div class="flex flex-row justify-between mx-15 my-5">
+                        <CraftingFeatSection />
+                        <StartCraftButton />
                     </div>
                 </div>
             </div>
@@ -41,8 +50,8 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #F0E7D8;
@@ -53,9 +62,8 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    height: 70%;
-    width: 50%;
+    min-height: 70vh;
+    min-width: 50vw;
     /* background: #B7410E; */
     background: 
         url('/src/assets/flat-lay-rusty-metallic-surface.jpg'),
@@ -76,18 +84,13 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 /* <a href="https://www.freepik.com/free-photo/flat-lay-rusty-metallic-surface_11684393.htm">Image by freepik</a> */
 .panel {
     
-    position: absolute;
     
-    height: 95%;
-    width: 95%;
+    min-height: 95%;
+    min-width: 95%;
 
     border: #000000 1px solid;
     border-radius: 5px;
     box-shadow: 0px 4px 4px #000000 inset;
-
-    x: 10;
-    y: 12;
-    stroke: red;
 }
 
 .panel_fg{
