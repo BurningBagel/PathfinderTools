@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import StartCraftButton from '../StartCraftButton.vue';
+import StartCraftButton from './StartCraftButton.vue';
 import CraftingCharacterSection from './CharacterSection/CraftingCharacterSection.vue';
 import CraftingFeatSection from './FeatSection/CraftingFeatSection.vue';
 import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
@@ -18,16 +18,19 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
     <div class="bg flex flex-col">
         <div class="panel_bg">
             <div class="panel my-4">
+                <!-- <div class="absolute inset-s-0 border-r-5 border-4">
+                    
+                </div> -->
                 <div class="panel_fg">
-                    <div class="flex gap-4 justify-between mx-15 my-15" >
+                    <div class="flex gap-4 justify-between mx-15 my-15 outline-4" >
                         <CraftingItemSection />
                     </div>
                     <div class="flex gap-4 justify-between mx-15 my-15">
                         <CraftingCharacterSection />
                     </div>
-                    <div class="flex flex-row justify-between mx-15 my-5">
+                    <div class="flex flex-row justify-between mx-15 my-5 border-2">
                         <CraftingFeatSection />
-                        <StartCraftButton />
+                        <StartCraftButton class="basis-1/7"/>
                     </div>
                 </div>
             </div>

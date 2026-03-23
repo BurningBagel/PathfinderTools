@@ -16,11 +16,11 @@
 
 .crafting-button{
   background-color: rgba(0,181,209,0.68);
-  position: static;
   color: #D59C4B;
   font-family: "Inter" sans-serif;
   font-size: 36;
   text-shadow: 0px 4px 4px black;
+  text-align: center;
   padding: 5px 10px;
   border-radius: 6px;
   border: solid 9px #565656;
@@ -40,10 +40,10 @@
 
 .crafting-button:before,
 .crafting-button:after {
-  content: attr(title);
-  padding: 50px;
-  color: rgba(255, 255, 255, .1);
   position: absolute;
+  content: attr(title);
+  padding: 5px;
+  color: rgba(255, 255, 255, .1);
 }
 
 .crafting-button:before {
