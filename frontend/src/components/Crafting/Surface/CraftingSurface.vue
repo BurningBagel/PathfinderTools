@@ -17,10 +17,10 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 <template>
     <div class="bg flex flex-col">
         <div class="panel_bg">
+            <div class="absolute inset-s-20 border-r-5 border-4">
+                
+            </div>
             <div class="panel my-4">
-                <!-- <div class="absolute inset-s-0 border-r-5 border-4">
-                    
-                </div> -->
                 <div class="panel_fg">
                     <div class="flex gap-4 justify-between mx-15 my-15 outline-4" >
                         <CraftingItemSection />

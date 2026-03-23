@@ -40,7 +40,6 @@
 
 .crafting-button:before,
 .crafting-button:after {
-  position: absolute;
   content: attr(title);
   padding: 5px;
   color: rgba(255, 255, 255, .1);
