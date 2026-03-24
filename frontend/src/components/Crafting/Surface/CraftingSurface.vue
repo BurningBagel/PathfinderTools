@@ -4,31 +4,30 @@ import CraftingCharacterSection from './CharacterSection/CraftingCharacterSectio
 import CraftingFeatSection from './FeatSection/CraftingFeatSection.vue';
 import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 
-//TODO: BOLTS
 
 //TODO: FEATS LIST
 
 //TODO: CRAFT BUTTON
 
-//TODO: RUST EFFECT ON BUTTONS AND BOLTS
 
 </script>
 
 <template>
     <div class="bg flex flex-col">
         <div class="panel_bg">
-            <div class="absolute inset-s-20 border-r-5 border-4">
-                
-            </div>
+            <div class="absolute rounded-full w-5 h-5 bg-gray-500 top-0.5 left-210" ></div>
+            <div class="absolute rounded-full w-5 h-5 bg-gray-500 top-161 left-0.5" ></div>
+            <div class="absolute rounded-full w-5 h-5 bg-gray-500 top-0.5 left-0.5" ></div>
+            <div class="absolute rounded-full w-5 h-5 bg-gray-500 top-161 left-210" ></div>
             <div class="panel my-4">
                 <div class="panel_fg">
-                    <div class="flex gap-4 justify-between mx-15 my-15 outline-4" >
+                    <div class="flex gap-4 justify-between mx-15 my-15" >
                         <CraftingItemSection />
                     </div>
                     <div class="flex gap-4 justify-between mx-15 my-15">
                         <CraftingCharacterSection />
                     </div>
-                    <div class="flex flex-row justify-between mx-15 my-5 border-2">
+                    <div class="flex flex-row justify-between mx-15 my-5">
                         <CraftingFeatSection />
                         <StartCraftButton class="basis-1/7"/>
                     </div>
@@ -60,17 +59,34 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
     background-color: #F0E7D8;
 }
 
+.panel_bg::after {
+    content:"";
+    position: absolute;
+    inset: 0;
+    background: url('/src/assets/flat-lay-rusty-metallic-surface.jpg');
+    background-size: cover;
+    background-position: center;
+
+    opacity: 75%;
+    mix-blend-mode: overlay;
+
+    pointer-events: none;
+
+}
+
 
 .panel_bg {
+    position: relative;
     display: flex;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     min-height: 70vh;
     min-width: 50vw;
-    /* background: #B7410E; */
-    background: 
+    background: #B7410E;
+    /* background: 
         url('/src/assets/flat-lay-rusty-metallic-surface.jpg'),
-        linear-gradient(rgba(183,65,14,0.86),rgba(183,65,14,0.86));
+        linear-gradient(rgba(183,65,14,0.86),rgba(183,65,14,0.86)); */
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
