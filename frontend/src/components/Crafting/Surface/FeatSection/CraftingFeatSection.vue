@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import CraftingButton from '../../CraftingButton.vue';
 import FeatSlot from './FeatSlot.vue';
 
 </script>
@@ -7,9 +8,6 @@ import FeatSlot from './FeatSlot.vue';
     <div class="flex flex-col">
         <!-- base with 3 slots, 1 extra + button to add more -->
         <FeatSlot />
-        <FeatSlot />
-        <FeatSlot />
-        <FeatSlot />
-        <FeatSlot />
+        <CraftingButton :label="'+'" />
     </div>
 </template>

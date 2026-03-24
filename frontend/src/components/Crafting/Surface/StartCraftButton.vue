@@ -5,6 +5,6 @@ import CraftingButton from '../CraftingButton.vue';
 
 <template>
     <div class="flex flex-col justify-center mx-1">
-        <CraftingButton class="h-1/3 " :label="'CRAFT'"/>
+        <CraftingButton class="" :label="'CRAFT'"/>
     </div>
 </template>

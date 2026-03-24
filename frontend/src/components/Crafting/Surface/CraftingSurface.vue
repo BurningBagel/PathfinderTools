@@ -9,6 +9,8 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 
 //TODO: CRAFT BUTTON
 
+//TODO: size of buttons needs to have a minimum
+
 
 </script>
 
@@ -81,7 +83,6 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
     min-width: 50vw;
     background: #B7410E;
     /* background: 
