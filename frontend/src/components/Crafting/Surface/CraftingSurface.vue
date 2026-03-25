@@ -17,10 +17,10 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 <template>
     <div class="bg flex flex-col">
         <div class="panel_bg">
-            <div class="absolute rounded-full w-5 h-5 bg-gray-500 top-0.5 left-210" ></div>
-            <div class="absolute rounded-full w-5 h-5 bg-gray-500 top-161 left-0.5" ></div>
+            <div class="absolute rounded-full w-5 h-5 bg-gray-500 top-0.5 left-229" ></div>
+            <div class="absolute rounded-full w-5 h-5 bg-gray-500 top-125 left-0.5" ></div>
             <div class="absolute rounded-full w-5 h-5 bg-gray-500 top-0.5 left-0.5" ></div>
-            <div class="absolute rounded-full w-5 h-5 bg-gray-500 top-161 left-210" ></div>
+            <div class="absolute rounded-full w-5 h-5 bg-gray-500 top-125 left-229" ></div>
             <div class="panel my-4">
                 <div class="panel_fg">
                     <div class="flex gap-4 justify-between mx-15 my-15" >

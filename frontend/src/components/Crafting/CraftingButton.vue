@@ -1,14 +1,5 @@
 <template>
-    <button class="crafting-button"
-    :class="{active,pressed}"
-    @mousedown="pressed = true"
-    @mouseup="pressed = false"
-    @mouseleave="pressed = false"
-    @click="$emit('click')"
-    >
-        {{ label }}
-        <slot />
-    </button>
+    <BaseButton class="crafting-button" :label="label" :active="active" :pressed="pressed" @click="doOnClick"/>
 </template>
 
 <style lang="css" >
@@ -60,6 +51,7 @@
 <script setup lang="ts">
 
     import { ref } from 'vue'
+    import BaseButton from './BaseButton.vue';
 
     defineProps({
         active: Boolean,
@@ -67,6 +59,11 @@
     })
 
     const pressed = ref(false)
+
+
+    function doOnClick(){
+
+    }
 
 </script>
 
