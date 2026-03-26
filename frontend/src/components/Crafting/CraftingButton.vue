@@ -1,24 +1,19 @@
 <template>
-    <BaseButton class="crafting-button" :label="label" :active="active" :pressed="pressed" @click="doOnClick"/>
+    <BaseButton class="crafting-button" @click="onclick">
+    {{ label }}
+    </BaseButton>
 </template>
 
 <style lang="css" >
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif&display=swap');
 
 .crafting-button{
-  background-color: rgba(0,181,209,0.68);
   color: #D59C4B;
   font-family: "Inter" sans-serif;
   font-size: 36;
   text-shadow: 0px 4px 4px black;
   text-align: center;
   padding: 5px 10px;
-  border-radius: 6px;
-  border: solid 9px #565656;
-  box-shadow: 
-  0 4px 0 #13443d,
-  0 6px 8px rgba(0,0,0,0.4);
-  transition: transform 0.05s ease, box-shadow 0.05s ease;
 }
 
 .crafting-button:active,
@@ -50,20 +45,15 @@
 
 <script setup lang="ts">
 
-    import { ref } from 'vue'
     import BaseButton from './BaseButton.vue';
 
     defineProps({
         active: Boolean,
-        label: String
+        label: String,
+        onclick: Function
     })
 
-    const pressed = ref(false)
 
-
-    function doOnClick(){
-
-    }
 
 </script>
 

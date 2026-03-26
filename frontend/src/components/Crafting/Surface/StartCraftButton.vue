@@ -1,10 +1,19 @@
 <script setup lang="ts">
-import CraftingButton from '../CraftingButton.vue';
+import BaseButton from '../BaseButton.vue';
+
+
 
 </script>
 
 <template>
     <div class="flex flex-col justify-center mx-1">
-        <CraftingButton class="" :label="'CRAFT'"/>
+        <BaseButton class="bg-red-500 py-10">
+        CRAFT
+        </BaseButton>
     </div>
 </template>
+
+<style lang="css">
+    
+
+</style>
