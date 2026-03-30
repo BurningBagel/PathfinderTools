@@ -12,8 +12,13 @@
 </template>
 
 <style lang="css">
+
 .base-button{
     background-color: rgba(0,181,209,0.68);
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 6px;
     border: solid 9px #565656;
     transition: transform 0.05s ease, box-shadow 0.05s ease;

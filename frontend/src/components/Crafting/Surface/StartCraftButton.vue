@@ -7,13 +7,12 @@ import BaseButton from '../BaseButton.vue';
 
 <template>
     <div class="flex flex-col justify-center mx-1">
-        <BaseButton class="bg-red-500 py-10">
+        <BaseButton class="bg-red-500 py-10 px-4">
         CRAFT
         </BaseButton>
     </div>
 </template>
 
 <style lang="css">
-    
 
 </style>
