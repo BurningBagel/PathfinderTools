@@ -5,11 +5,6 @@ import CraftingFeatSection from './FeatSection/CraftingFeatSection.vue';
 import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 
 
-//TODO: FEATS LIST
-
-//TODO: CRAFT BUTTON
-
-//TODO: size of buttons needs to have a minimum
 
 
 </script>
@@ -37,7 +32,7 @@ import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
             </div>
     
         </div>
-        <footer><a href="https://www.freepik.com/free-photo/flat-lay-rusty-metallic-surface_11684393.htm">Image by freepik</a></footer>
+        <footer><a href="https://www.freepik.com/free-photo/flat-lay-rusty-metallic-surface_11684393.htm">Rust Texture by freepik</a></footer>
     </div>
 </template>
 

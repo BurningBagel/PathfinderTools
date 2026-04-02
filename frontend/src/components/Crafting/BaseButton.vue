@@ -5,7 +5,7 @@
     @mousedown="pressed = true"
     @mouseup="pressed = false"
     @mouseleave="pressed = false"
-    @click="$emit('click')"
+    @click="$emit('onclick')"
     >
         <slot />
     </button>
@@ -14,13 +14,14 @@
 <style lang="css">
 
 .base-button{
-    background-color: rgba(0,181,209,0.68);
+    /* background-color: rgba(0,181,209,0.68); */
+    text-shadow: 0px 4px 4px black;
     box-sizing: border-box;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    border: solid 9px #565656;
+    /* border: solid 9px #565656; */
     cursor: pointer;
     transition: transform 0.05s ease, box-shadow 0.05s ease;
     box-shadow: 
