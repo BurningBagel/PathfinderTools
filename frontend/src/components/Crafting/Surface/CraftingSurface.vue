@@ -4,7 +4,9 @@ import CraftingCharacterSection from './CharacterSection/CraftingCharacterSectio
 import CraftingFeatSection from './FeatSection/CraftingFeatSection.vue';
 import CraftingItemSection from './ItemSection/CraftingItemSection.vue';
 
+//TODO turn buttons into <select>
 
+//TODO style selects
 
 
 </script>
