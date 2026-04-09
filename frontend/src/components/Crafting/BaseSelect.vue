@@ -1,7 +1,7 @@
 <template>
-    <select class="base-select" @change="onChange" :value="selectedValue">
-        <option disabled value="">{{ title }}</option>
-        <option v-for="(option,index) in testOptions" :index="index" :key="option.optionValue" :value="option.optionValue">
+    <select class="appearance-none base-select crafting-button" @change="onChange" :value="selectedValue">
+        <option class="crafting-button" disabled value="">{{ title }}</option>
+        <option class="crafting-button" v-for="(option,index) in choices" :index="index" :key="option.optionValue" :value="option.optionValue">
             {{ option.optionText }}</option>
     </select>
 </template>
@@ -30,7 +30,7 @@ import { SelectData } from '../../models/selectData.model';
 
 
 defineProps(
-    { selectedValue: String, testOptions: Array<SelectData>, title: String }
+    { selectedValue: String, choices: Array<SelectData>, title: String }
 )
 
 const emit = defineEmits(['update:selectedValue'])

@@ -1,6 +1,6 @@
 <template>
     <!-- <CraftingButton :label="'dropdown type'"/> -->
-     <BaseSelect :options="itemTypeOptions" :title="'Dropdown Type'"/>
+     <BaseSelect class="crafting-button" :choices="itemTypeOptions" :title="'Item Type'"/>
     <CraftingButton :label="'item level'" />
     <CraftingButton :label="'formula checkbox'"  @click="clickLog"/>
 </template>
@@ -14,7 +14,7 @@
     import BaseSelect from '../../BaseSelect.vue';
     import CraftingButton from '../../CraftingButton.vue';
     
-    let itemTypeOptions : SelectData[] = [];
+    let itemTypeOptions : SelectData[] = [{optionText:"Alchemical",optionValue:"alchemical"},{optionText:"Magical",optionValue:"magical"}]; // TODO placeholder
 
     function clickLog(){
         // console.log("I got clicked!")
