@@ -15,7 +15,6 @@
 
 .base-button{
     /* background-color: rgba(0,181,209,0.68); */
-    text-shadow: 0px 4px 4px black;
     box-sizing: border-box;
     display: inline-flex;
     align-items: center;
