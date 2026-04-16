@@ -1,7 +1,7 @@
 <template>
     <select class="appearance-none base-select crafting-button" @change="onChange" :value="selectedValue">
         <option class="crafting-button" disabled value="">{{ title }}</option>
-        <option class="crafting-button" v-for="(option,index) in choices" :index="index" :key="option.optionValue" :value="option.optionValue">
+        <option class="crafting-button" v-for="option in choices" :key="option.optionValue" :value="option.optionValue">
             {{ option.optionText }}</option>
     </select>
 </template>
