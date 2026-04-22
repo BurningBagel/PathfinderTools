@@ -41,7 +41,6 @@
 <script setup lang="ts">
 import type { SelectData } from '../../../../models/selectData.model';
 import BaseSelect from '../../BaseSelect.vue';
-import CraftingButton from '../../CraftingButton.vue';
 
 let proficiencyChoices : SelectData[] = [ //TODO replace with global constants
     {
